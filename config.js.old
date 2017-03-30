@@ -1,0 +1,11 @@
+var config = {}
+
+config.endpoint = process.env.HOST || "https://soundbot.documents.azure.com:443/";
+config.primaryKey = process.env.AUTH_KEY || "3j57423b4Rb36Jqba4bI3yHF1Xi63AhelGWkTvGVEAIW9mFP3NljO1BmvAPkE0dY6PSuxPSAeT6qGOnVXui9kg==";
+config.database = {
+    "id": "SoundBot"
+    };
+config.collection = {
+    "id": "Jams"        
+    };
+module.exports = config;
