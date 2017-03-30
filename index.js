@@ -24,7 +24,7 @@ server.get('/docdb/:name', refreshdb);
 server.head('/hello/:name', respond);
 server.pre(restify.pre.userAgentConnection());
 
-server.listen(8080, function() {
+server.listen( function() {
   console.log('%s listening at %s', server.name, server.url);
 });
 
